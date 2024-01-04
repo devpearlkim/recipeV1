@@ -16,6 +16,7 @@ import Mypage from './pages/myPage/Mypage'
 import ModifyRecipe from './pages/ModifyPage'
 import SearchCategotyErrorBoundary from './pages/list/RecipeSearchCategoryList'
 import SearchErrorBoundary from './pages/list/RecipeSearchList'
+import ImageComponent from './components/image/ImageComponent'
 
 export const AppRoutes = () => {
   return (
@@ -34,9 +35,10 @@ export const AppRoutes = () => {
           path="category/:category"
           element={<SearchCategotyErrorBoundary />}
         />
+        <Route path="/image" element={<ImageComponent />} />
         <Route path="/delete" element={<DeleteUser />} />
         <Route path="oauth" element={<Callback />} />
-        <Route path="uploadrecipe" element={<UploadRecipe />} />
+        <Route path="/uploadrecipe" element={<UploadRecipe />} />
         <Route path="/modify/:recipeId" element={<ModifyRecipe />} />
         {/* <Route path="admin_caterory" element={<CategoryManagement />} /> */}
       </Route>
