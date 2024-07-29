@@ -41,9 +41,6 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-<<<<<<< HEAD
-.env
-dist
 
 # Celebrity configurations
 release/app/dist
@@ -82,7 +79,6 @@ release/build
 
 # OSX
 .DS_Store
-=======
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
